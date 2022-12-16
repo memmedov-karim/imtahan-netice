@@ -1,7 +1,6 @@
 import React from "react";
 import users from '../../elnare.json'
 import './home.css'
-import logo from '../../logo21.png';
 export default function Home(props) {
   console.log(users)
   const IdChecker = (id,data) => {
@@ -44,7 +43,7 @@ export default function Home(props) {
   return (
     <div className="home">
       <div className="navbar">
-        <img alt="logo" src={logo} />
+         <h1>İmtahan nəticəsi üçün utis kodu daxil edin</h1>
 
       </div>
       
