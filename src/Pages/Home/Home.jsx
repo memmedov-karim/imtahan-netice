@@ -29,7 +29,7 @@ export default function Home(props) {
     console.log(IdChecker(code,users));
     if(IdChecker(code,users)){
       setTimeout(()=>{
-        window.location = `/${code}`
+        window.location = `/mark/${code}`
   
       },1300)
 
