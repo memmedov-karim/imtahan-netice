@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/imtahan-netice/static/css/main.28dd4706.css",
+    "main.js": "/imtahan-netice/static/js/main.31da1129.js",
+    "static/js/703.f9f7df78.chunk.js": "/imtahan-netice/static/js/703.f9f7df78.chunk.js",
+    "static/js/210.63486322.chunk.js": "/imtahan-netice/static/js/210.63486322.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/imtahan-netice/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/imtahan-netice/index.html",
+    "main.28dd4706.css.map": "/imtahan-netice/static/css/main.28dd4706.css.map",
+    "main.31da1129.js.map": "/imtahan-netice/static/js/main.31da1129.js.map",
+    "703.f9f7df78.chunk.js.map": "/imtahan-netice/static/js/703.f9f7df78.chunk.js.map",
+    "210.63486322.chunk.js.map": "/imtahan-netice/static/js/210.63486322.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/imtahan-netice/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28dd4706.css",
+    "static/js/main.31da1129.js"
+  ]
+}
