@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home';
 import Result from './Pages/Result/Result'
 import NotFound from './Pages/NotFound/NotFound'
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
 
@@ -14,10 +14,10 @@ from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='mark/:id' element={<Result result={users} />} />
+          <Route path=':id' element={<Result result={users} />} />
           <Route path='notfound' element={<NotFound />}/>
         </Routes>
       </Router>
