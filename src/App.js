@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home';
 import Result from './Pages/Result/Result'
 import NotFound from './Pages/NotFound/NotFound'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 
