@@ -17,8 +17,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='mark/:id' element={<Result result={users} />} />
-          <Route path='notfound' element={<NotFound />}/>
+          <Route path='/mark/:id' element={<Result result={users} />} />
+          <Route path='/notfound' element={<NotFound />}/>
         </Routes>
       </Router>
     </div>
