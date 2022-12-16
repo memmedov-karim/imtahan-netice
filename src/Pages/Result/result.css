@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+.head_of_result{
+    text-align: center;
+    background-color: rgb(211, 191, 191);
+    padding: 3px;
+}
+.table{
+    margin: auto;
+}
+.all_info{
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.box{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(211, 191, 191);
+    border-radius: 5px;
+    width: 30%;
+    margin-top: 10px;
+}
+.private_info_list{
+    list-style: none;
+}
+.az_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.math_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.result_with_plus_minsu{
+    width: 100%;
+    /* border: 1px solid black;
+    background-color:rgb(211, 191, 191) ; */
+    border-radius: 20px;
+}
+.table{
+    width: min-content;
+}
+.results_box{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+}
+@media screen and (min-width:800px) and (max-width:1100px){
+    .head{
+        font-size: 27px;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width:600px) and (max-width:799px){
+    .head{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+@media screen and (min-width:400px) and (max-width:599px){
+    .head{
+        font-size: 17px;
+        text-align: center;
+    }
+    .all_info{
+        display: block;
+    }
+    .private_info{
+        width: 100%;
+    }
+    .public_info{
+        width: 100%;
+    }
+    .mark_info{
+        width: 100%;
+    }
+    .az_box{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width:300px) and (max-width:399px){
+    .head{
+        font-size: 14px;
+        text-align: center;
+    }
+    .all_info{
+        display: block;
+    }
+    .az_box{
+        width: 100%;
+    }
+    .private_info{
+        width: 100%;
+    }
+    .public_info{
+        width: 100%;
+    }
+    .mark_info{
+        width: 100%;
+    }
+
+}
