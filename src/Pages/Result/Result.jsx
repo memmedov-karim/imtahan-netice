@@ -47,17 +47,17 @@ export default function Student(props) {
             <div className='box private_info'>
                 <h1 className='head head_of_info'>Şəxsi Məlumatlar</h1>
                 <ul className='private_info_list'>
-                    <li><strong>Ad:</strong>{User.Ad}</li>
-                    <li><strong>Soyad:</strong>{User.Soyad}</li>
-                    <li><strong>Ata adı:</strong>{User["Ata adı"]}</li>
+                    <li><strong>Ad: </strong>{User.Ad}</li>
+                    <li><strong>Soyad: </strong>{User.Soyad}</li>
+                    <li><strong>Ata adı: </strong>{User["Ata adı"]}</li>
                 </ul>
             </div>
             <div className='box public_info'>
                 <h1 className='head head_of_public'>Məlumat</h1>
                 <ul className='private_info_list'>
-                    <li><strong>Rayon:</strong>{User['Rayon Kodu']}</li>
-                    <li><strong>Sinif:</strong>{User.Sinif}</li>
-                    <li><strong>Cins:</strong>{User.Cins}</li>
+                    <li><strong>Rayon: </strong>{User['Rayon Kodu']}</li>
+                    <li><strong>Sinif: </strong>{User.Sinif}</li>
+                    <li><strong>Cins: </strong>{User.Cins}</li>
                 </ul>
                 
             </div>
@@ -72,7 +72,7 @@ export default function Student(props) {
             </div>
         </div>
 
-        <h1 className='head head_of_result_plus_minus'>Düz,Sərf və Boş</h1>
+        <h1 className='head head_of_result_plus_minus'>Düz,Səhf və Boş</h1>
 
         <div className='result_with_plus_minsu'>
 
