@@ -1,5 +1,5 @@
 import React from "react";
-import users from '../../elnare.json'
+import users from '../../sinaq.json'
 import './home.css'
 export default function Home(props) {
   console.log(users)
