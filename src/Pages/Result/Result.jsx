@@ -42,10 +42,10 @@ export default function Student(props) {
     }
   return (
     <div id="testId" className='conten_of_result'>
-        <h1 className='head head_of_result'>Liseylərə Qəbul Sınağ İmtahanı Nəticə Vərəqi </h1>
+        <h1 className='head head_of_result'>Liseylərə Qəbul Sınağı Nəticə Vərəqi </h1>
         <div className='all_info'>
             <div className='box private_info'>
-                <h1 className='head head_of_info'>Şəxsi Məlumatlar</h1>
+                <h1 className='head head_of_info'>Şəxsi məlumatlar</h1>
                 <ul className='private_info_list'>
                     <li><strong>Ad: </strong>{User.Ad}</li>
                     <li><strong>Soyad: </strong>{User.Soyad}</li>
@@ -66,18 +66,17 @@ export default function Student(props) {
                 
                 <h2>Xalis% - <i>{User["CƏMİ XALİS faizi"]}</i></h2>
                 <hr/>
-                <h2>Yer - <i>{User["CƏMİ XALİS"]}</i></h2>
                 
                 
             </div>
         </div>
 
-        <h1 className='head head_of_result_plus_minus'>Düz,Səhf və Boş</h1>
+        <h1 className='head head_of_result_plus_minus'>Düz,Səhv və Boş</h1>
 
         <div className='result_with_plus_minsu'>
 
             <div className='az_box'>
-                <div className='head_of_az'><strong>Azərbaycan</strong></div>
+                <div className='head_of_az'><strong>Azərbaycan dili</strong></div>
                 <div className="results_box">
                   <pre><strong><FaCheck /></strong>{User["Tədris dili Doğru cavablar"]}</pre>
                   <pre><strong><FaCircle /></strong>{User["Tədris dili Cavabınız"]}</pre>
