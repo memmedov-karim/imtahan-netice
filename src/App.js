@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import users from './elnare.json';
+import users from './sinaq.json';
 import Home from './Pages/Home/Home';
 import Result from './Pages/Result/Result'
 import NotFound from './Pages/NotFound/NotFound'
