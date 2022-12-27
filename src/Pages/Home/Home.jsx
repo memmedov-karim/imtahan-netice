@@ -50,7 +50,7 @@ export default function Home(props) {
       <div className="form">
 
       <form onSubmit={GetSubmit}>
-        <input placeholder="utis kodu daxil edin..." type="text" onChange={GetCode} />
+        <input placeholder="şərti kodu daxil edin." type="text" onChange={GetCode} />
         <button className="btn btn-success" onClick={GetResultOfExam}>Nəticə</button>
       </form>
       
