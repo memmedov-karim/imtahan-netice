@@ -1,7 +1,6 @@
 import React from 'react';
 import './result.css';
 import {FaCheck,FaCircle,FaPlus,FaSpinner} from 'react-icons/fa';
-import GenericPdfDownloader from '../../Components/GenericPdfDownloader/GenericPdfDownloader';
 import { useParams } from 'react-router-dom';
 export default function Student(props) {
     const id  = useParams().id
@@ -134,10 +133,6 @@ export default function Student(props) {
     </tr>
   </tbody>
 </table>
-<GenericPdfDownloader 
-className = "ins"
-downloadFileName="Result" 
-rootElementId="tableId" />
         
     </div>
   )
