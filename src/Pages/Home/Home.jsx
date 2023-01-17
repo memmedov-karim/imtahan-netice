@@ -1,11 +1,11 @@
 import React from "react";
-import users from '../../sinaq.json'
+import users from '../../NƏTİCƏLƏR.json'
 import './home.css'
 export default function Home(props) {
   console.log(users)
   const IdChecker = (id,data) => {
     for(let i of data!==null?data:[]){
-      if(i["UTİS kodu"] === id){
+      if(i["UTİS kod"] === id){
         return true
       }
     }
