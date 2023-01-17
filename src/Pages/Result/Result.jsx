@@ -121,14 +121,14 @@ export default function Student(props) {
       <td>{User["CƏMİ SƏHV"]}</td>
     </tr>
     <tr>
-      <th scope="row">Xalis%</th>
+      <th scope="row">Bal</th>
       <td >{User["Azərbaycan dili Xalis sayı"]}</td>
       <td>{User["Riyaziyyat Xalis sayı"]}</td>
       <td>{User["CƏMİ XALİS BAL"]}</td>
     </tr>
     <tr>
-      <th scope="row">Bal</th>
-      <td style={{textAlign:"center"}} colSpan="3" >{User["CƏMİ XALİS BAL"]}</td>
+      <th scope="row">Xalis %</th>
+      <td style={{textAlign:"center"}} colSpan="3" >{User["CƏMİ XALİS faizi"]}</td>
       
     </tr>
   </tbody>
