@@ -105,7 +105,7 @@ export default function Student(props) {
     <tr>
       <th scope="row">Sual Sayı</th>
       <td>{User["Azərbaycan dili Sual sayı"]}</td>
-      <td>{User["Riyaziyyat dili Sual sayı"]}</td>
+      <td>{User["Riyaziyyat Sual sayı"]}</td>
       <td>{User["CƏMİ SUAL SAYI"]}</td>
     </tr>
     <tr>
