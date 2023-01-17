@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import users from './sinaq.json';
+import users from './NƏTİCƏLƏR.json';
 import Home from './Pages/Home/Home';
 import Result from './Pages/Result/Result'
 import NotFound from './Pages/NotFound/NotFound'
