@@ -4,25 +4,25 @@ import {FaCheck,FaCircle,FaPlus,FaSpinner} from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 export default function Student(props) {
     const id  = useParams().id
-    const StudentResult = props.result?.find(obj=>obj["UTİS kodu"] === id)
+    const StudentResult = props.result?.find(obj=>obj["UTİS kod"] === id)
     const User = {
         "Ad":StudentResult===undefined?<FaSpinner />:StudentResult["Ad"],
         "Soyad":StudentResult===undefined?<FaSpinner />:StudentResult["Soyad"],
         "Ata adı":StudentResult===undefined?<FaSpinner />:StudentResult["Ata adı"],
-        "Rayon Kodu":StudentResult===undefined?<FaSpinner />:StudentResult["Rayon Kodu"],
+        "Rayon Kodu":StudentResult===undefined?<FaSpinner />:StudentResult["Şəhər\/Rayon"],
         "Məktəb Kodu":StudentResult===undefined?<FaSpinner />:StudentResult["Məktəb Kodu"],
         "Sinif":StudentResult===undefined?<FaSpinner />:StudentResult.Sinif,
-        "Bölmə":StudentResult===undefined?<FaSpinner />:StudentResult.Bölmə,
+//         "Bölmə":StudentResult===undefined?<FaSpinner />:StudentResult.Bölmə,
         "Cins":StudentResult===undefined?<FaSpinner />:StudentResult.Cins,
-        "Tədris dili Cavabınız":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Cavabınız"],
-        "Tədris dili Doğru cavablar":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Doğru cavablar"],
-        "Tədris dili Status":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Status"],
-        "Tədris dili Sual sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Sual sayı"],
-        "Tədris dili Doğru sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Doğru sayı"],
-        "Tədris dili Səhv sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Səhv sayı"],
-        "Tədris dili Xalis sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Xalis sayı"],
-        "Tədris dili Xalis faizi":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Xalis faizi"],
-        "Tədris dili Nisbi bal":StudentResult===undefined?<FaSpinner />:StudentResult["Tədris dili Nisbi bal"],
+        "Azərbaycan dili Cavabınız":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Cavabınız"],
+        "Azərbaycan dili Doğru cavablar":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Doğru cavablar"],
+        "Azərbaycan dili Status":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Status"],
+        "Azərbaycan dili Sual sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Sual sayı"],
+        "Azərbaycan dili Doğru sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Doğru sayı"],
+        "Azərbaycan dili Səhv sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Səhv sayı"],
+        "Azərbaycan dili Xalis sayı":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Xalis sayı"],
+        "Azərbaycan dili Xalis faizi":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Xalis faizi"],
+        "Azərbaycan dili Nisbi bal":StudentResult===undefined?<FaSpinner />:StudentResult["Azərbaycan dili Nisbi bal"],
         "Riyaziyyat Cavabınız":StudentResult===undefined?<FaSpinner />:StudentResult["Riyaziyyat Cavabınız"],
         "Riyaziyyat Doğru cavablar":StudentResult===undefined?<FaSpinner />:StudentResult["Riyaziyyat Doğru cavablar"],
         "Riyaziyyat Status":StudentResult===undefined?<FaSpinner />:StudentResult["Riyaziyyat Status"],
@@ -37,7 +37,7 @@ export default function Student(props) {
         "CƏMİ SƏHV":StudentResult===undefined?<FaSpinner />:StudentResult["CƏMİ SƏHV"],
         "CƏMİ XALİS":StudentResult===undefined?<FaSpinner />:StudentResult["CƏMİ XALİS"],
         "CƏMİ XALİS faizi":StudentResult===undefined?<FaSpinner />:StudentResult["CƏMİ XALİS faizi"],
-        "BAL":StudentResult===undefined?<FaSpinner />:StudentResult["BAL"],
+        "CƏMİ XALİS BAL":StudentResult===undefined?<FaSpinner />:StudentResult["CƏMİ XALİS BAL"],
     }
   return (
     <div id="testId" className='conten_of_result'>
@@ -77,9 +77,9 @@ export default function Student(props) {
             <div className='az_box'>
                 <div className='head_of_az'><strong>Azərbaycan dili</strong></div>
                 <div className="results_box">
-                  <pre><strong><FaCheck /></strong>{User["Tədris dili Doğru cavablar"]}</pre>
-                  <pre><strong><FaCircle /></strong>{User["Tədris dili Cavabınız"]}</pre>
-                  <pre><strong><FaPlus /></strong>{User["Tədris dili Status"]}</pre>
+                  <pre><strong><FaCheck /></strong>{User["Azərbaycan dili Doğru cavablar"]}</pre>
+                  <pre><strong><FaCircle /></strong>{User["Azərbaycan dili Cavabınız"]}</pre>
+                  <pre><strong><FaPlus /></strong>{User["Azərbaycan dili Status"]}</pre>
                 </div>
             </div>
             <hr />
@@ -104,31 +104,31 @@ export default function Student(props) {
   <tbody>
     <tr>
       <th scope="row">Sual Sayı</th>
-      <td>{User["Tədris dili Sual sayı"]}</td>
-      <td>{User["Tədris dili Sual sayı"]}</td>
+      <td>{User["Azərbaycan dili Sual sayı"]}</td>
+      <td>{User["Riyaziyyat dili Sual sayı"]}</td>
       <td>{User["CƏMİ SUAL SAYI"]}</td>
     </tr>
     <tr>
       <th scope="row">Doğru</th>
-      <td>{User["Tədris dili Doğru sayı"]}</td>
+      <td>{User["Azərbaycan dili Doğru sayı"]}</td>
       <td>{User["Riyaziyyat Doğru sayı"]}</td>
       <td>{User["CƏMİ DOĞRU"]}</td>
     </tr>
     <tr>
       <th scope="row">Səhv</th>
-      <td >{User["Tədris dili Səhv sayı"]}</td>
+      <td >{User["Azərbaycan dili Səhv sayı"]}</td>
       <td>{User["Riyaziyyat Səhv sayı"]}</td>
       <td>{User["CƏMİ SƏHV"]}</td>
     </tr>
     <tr>
       <th scope="row">Xalis%</th>
-      <td >{User["Tədris dili Xalis sayı"]}</td>
+      <td >{User["Azərbaycan dili Xalis sayı"]}</td>
       <td>{User["Riyaziyyat Xalis sayı"]}</td>
-      <td>{User["CƏMİ XALİS"]}</td>
+      <td>{User["CƏMİ XALİS BAL"]}</td>
     </tr>
     <tr>
       <th scope="row">Bal</th>
-      <td style={{textAlign:"center"}} colSpan="3" >{User["BAL"]}</td>
+      <td style={{textAlign:"center"}} colSpan="3" >{User["CƏMİ XALİS BAL"]}</td>
       
     </tr>
   </tbody>
