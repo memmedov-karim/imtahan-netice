@@ -127,7 +127,7 @@ export default function Student(props) {
       <td>{User["CƏMİ XALİS BAL"]}</td>
     </tr>
     <tr>
-      <th scope="row">Xalis %</th>
+      <th scope="row">Xalis%</th>
       <td style={{textAlign:"center"}} colSpan="3" >{User["CƏMİ XALİS faizi"]}</td>
       
     </tr>
